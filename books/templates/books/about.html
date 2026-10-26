@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}About &middot; BookNook{% endblock %}
+{% block content %}
+<h1 class="mb-3">About BookNook</h1>
+<p>
+  BookNook is a small Django web application built for INF601 &ndash; Advanced Programming
+  in Python (Mini Project 6). It demonstrates a complete, database-backed web app with
+  user accounts and a styled admin.
+</p>
+
+<h4 class="mt-4">What it does</h4>
+<ul>
+  <li>Lets you register and log in securely using Django's authentication system.</li>
+  <li>Gives each user a private bookshelf stored in a SQLite database.</li>
+  <li>Supports adding, editing, and deleting books with a genre, status, rating, and notes.</li>
+  <li>Provides a styled Django admin for managing books and genres.</li>
+</ul>
+
+<h4 class="mt-4">How it's built</h4>
+<ul>
+  <li><strong>Django</strong> &mdash; project/app structure, models, views, templates, and admin.</li>
+  <li><strong>SQLite</strong> &mdash; the database, with two models linked by a foreign key (Book &rarr; Genre, Book &rarr; User).</li>
+  <li><strong>Django auth</strong> &mdash; the register / login / logout system.</li>
+  <li><strong>Bootstrap 5</strong> &mdash; responsive styling and the delete-confirmation modal.</li>
+</ul>
+{% endblock %}
